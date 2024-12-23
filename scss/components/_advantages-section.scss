@@ -1,0 +1,45 @@
+
+/*-- Стили второй страници--*/
+
+.advantages-section {
+   padding: 16px 0px;
+
+   @media screen and (min-width: $bp-tablet){
+      display: block;
+      background-color: var(--color-brend-li);
+   
+   }
+      /*-- Для телефонов--*/
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background-color: var(--color-normal);
+      border-radius: 24px;
+      padding: 24px 40px;
+
+      /*-- Для компютеров--*/
+      @media screen and (min-width: $bp-tablet){
+         flex-direction: row;
+         color: var(--color-brenda-light);
+         font-size: 20px;
+         display: flex;
+         justify-content: space-between;
+         gap: 40px;
+         background-color: transparent;
+         border-radius: 0;
+         padding: 0;
+      }
+   }
+
+   &__item{
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-brenda-dark);
+
+   @media screen and (min-width: $bp-tablet){   
+      font-size: 20px;
+      color: var(--color-brenda-light);
+      }
+   }
+}

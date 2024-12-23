@@ -1,0 +1,38 @@
+/*-- Основное содержимое страници 2--*/
+.traditions-section {
+   padding-top: 40px;
+
+      @media screen and (min-width: $bp-tablet){
+         padding-top: 96px;
+      }
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: flex-start; /*Элементы выравниваются по началу поперечной оси.*/
+   }
+
+   &__content {
+      max-width: 710px;
+   }
+
+   &__title {
+      margin-bottom: 42px;
+   }
+
+   &__text {
+      &__text--limited{
+         max-width: 340px;
+      }
+   }
+
+   &__image{
+      border-radius: 400px 400px 0px 0px;
+      display: none;
+
+      @media screen and (min-width: $bp-tablet){
+         display: block;
+      }
+   }
+}

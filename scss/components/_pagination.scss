@@ -1,0 +1,20 @@
+/* Настройки для кнопок знизу слайдера */
+
+.pagination{
+   padding: 20px;
+   display: flex;
+   gap: 24px; /*Відстань між кнопками */
+   justify-content: center;    /* Выравнивание по горизонтали */
+   align-items: center;        /* Выравнивание по вертикали */
+
+   &__button{
+      width: 12px;
+      height: 12px;
+      background-color: var(--color-brend-da);
+      border-radius: 50px;
+   }
+
+   &__button--active{
+         background-color: #fff;
+   }
+}

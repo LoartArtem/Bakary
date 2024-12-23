@@ -1,0 +1,57 @@
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   /*Убирает все точки в ul*/
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   /*Для всех элементов файла далает бокс*/
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   /*--  */
+   color: var(--color-brenda-dark);
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.5;
+   margin: 0;
+   background-color: var(--color-brenda-light);
+
+   @media screen and (min-width: $bp-tablet){
+      font-size: 18px;
+      font-weight: 400;
+      }
+}
+
+/*---Убираю отступы сверху в заголовках и строках ---*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0px;
+}
+
+address {
+   font-style: normal;
+}
+
+/*-Для всіх посилань, щоб займали область всього блоку-*/
+a {
+   display: inline-block;
+}
+
+/*-Свойства для картинок-*/
+img{
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;  /*-Не дозволяє пропорційно зменшуватись картинкам-*/
+}

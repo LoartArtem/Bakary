@@ -1,0 +1,50 @@
+
+/*--- Ст5 Секция контактов ---*/
+.contact-section {
+   padding-bottom: 96px;
+
+   &__title {
+      margin-bottom: 16px;
+   }
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex-shrink: 0;
+
+      @media screen and (min-width: $bp-tablet){
+         flex-direction: row;
+         gap: 32px;
+      }
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__map {
+      flex-shrink: 0;
+      height: 176px;
+      margin: 0 -24px;
+      border-radius: 16px;
+      border: none;
+
+      @media screen and (min-width: $bp-tablet){
+         margin: auto;
+         width: 403px;
+         height: 395px;
+      }
+
+      @media screen and (min-width: $bp-desktop){
+         width: 603px;
+         height: 595px;
+      }
+   }
+
+}
+
+
+
+

@@ -1,0 +1,21 @@
+/*------- Мобільне меню ----*/
+.mobile-menu{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-brenda-light);
+   transform: translateX(100%);/*-Растояние на которое сдвинуто окно-*/
+   transition: transform 0.5s; /*-Скорость сдвига мобильного меню-*/
+
+   &.is-open{
+      transform: translateX(0);
+   }
+   /*-Свойства кнопки закрытия моб.меню-*/
+   &__menu-btn-close{
+      position: absolute;
+      top: 16px;
+      right: 24px;
+   }
+}

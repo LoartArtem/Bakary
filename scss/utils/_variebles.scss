@@ -1,0 +1,15 @@
+/*------- Присвоение переменных ----*/
+:root {
+   --color-brend-li: #819B57;
+   /*Присваиваю переменную главному брендовому цвету*/
+   --color-brend-da: #465929;
+   --color-brenda-light: #FAF4EA;
+   --color-brenda-dark: #31261A;
+   --color-normal: #CFCFBC;
+   --color-secondary-dark: #A18268;
+}
+
+   /*Присваиваю переменную для всіх типів гаджетів*/
+   $bp-mobile: 480px;
+   $bp-tablet: 768px;
+   $bp-desktop: 1280px;

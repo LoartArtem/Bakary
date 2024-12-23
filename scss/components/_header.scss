@@ -1,0 +1,60 @@
+/*--- Header ----*/
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding-top: 16px;
+
+   @media screen and (min-width: $bp-desktop) {
+      padding-top: 32px;
+   }
+
+   &__flex {
+      display: flex;
+      align-items: center; /*Вирівнювання по висоті*/
+      gap: 40px; /*Відстань між елем. щоб не схлопувались при жатті*/
+   }
+
+   &__nav {
+      flex-grow: 1; /*Розтягує елементи на все вільне місце*/
+      display: flex;
+      align-items: center;
+      gap: 40px; /*Відстань між елем. щоб не схлопувались при жатті*/
+   }
+
+   &__menu {
+      /* Мобільна версія */
+      display: none;
+      /* Для десктопів */
+      @media screen and (min-width: $bp-desktop) {
+         display: flex;
+         gap: 64px; /*Задает растояние мажду элементами флекса*/
+         flex-grow: 1; /*Розтягує елементи на все вільне місце*/
+         justify-content: center;
+      }
+   }
+
+   &__button {
+      display: none;
+      /* Для десктопів */
+      @media screen and (min-width: $bp-desktop) {
+         display: block;
+      }
+   }
+
+   &__burger {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      fill: var(--color-brenda-light);
+      
+      /* Для десктопів */
+      @media screen and (min-width: $bp-desktop) {
+         display: none;
+      }
+   }
+}

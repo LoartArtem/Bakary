@@ -1,0 +1,60 @@
+/*---- Ст4 Секция форматов ---*/
+
+.formats-section{
+   &__slieder {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      padding: 0px;
+      color: var(--color-brenda-light);
+   }
+
+   &__container{
+      overflow: hidden;
+   }
+
+   &__list{
+      margin-bottom: 32px;
+   }
+   
+}
+
+.format-card {
+   position: relative;
+   height: 444px;
+   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-brenda-dark) 100%);
+   border-radius: 16px;
+   padding: 24px;
+   transition: transform 0.3s; /*-Заповільнює збільшеня вікна при наведенні -*/
+   display: flex; /*-Задаю флекс щоб змістити текст вниз -*/
+   flex-direction: column;
+   justify-content: flex-end; /*-Переношу ввесь текст в кінець -*/
+   overflow: hidden;
+
+   &__title {
+      font-size: 24px;
+      font-weight: 600;
+   }
+
+   &__imege {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /*-Додаю меншим 0 для того щоб він був знизу, а текст зверху-*/
+   }
+
+   &__text {
+      font-size: 14px;
+      font-weight: 300;
+   }
+}
+
+.format-card:hover {
+   transform: scale(1.05); /*-Збільшує вікно при наведенні -*/
+}
+
+
+
+

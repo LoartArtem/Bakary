@@ -1,0 +1,79 @@
+/*--- Ст3 Секция шеф поворов ---*/
+
+   /*--Общий блок форматов--*/
+.chefs-section{
+
+   &__title {
+      margin: 0 auto 24px;
+      position: relative; /*-Фіксую блок відносно якого буде зміщенн ліній-*/
+   
+      @media screen and (min-width: $bp-tablet){
+         margin: 0 auto 80px;
+      }
+   }
+
+   &__list {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+   
+      
+      @media screen and (min-width: $bp-tablet){
+         gap: 30px 40px;
+         flex-direction: row;
+      }
+   }
+
+   &__item {
+
+      @media screen and (min-width: $bp-tablet){
+         flex-basis: calc((100% - 30px) / 2); /*-Ширина контейнера без ГЕБ 30пк-*/
+      }
+   }
+}
+
+/*--- Секція карточек форматів ---*/
+.chef-card {
+   display: flex;
+   align-items: flex-start;
+   gap: 16px;
+
+   @media screen and (min-width: $bp-tablet){
+      gap: 30px;
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-tablet){
+         font-size: 40px;
+      }
+   }
+
+   &__text p {
+      font-size: 14px;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: $bp-tablet){
+         font-size: 18px;
+      }
+   }
+
+   &:last-child{
+      margin-bottom: 0;
+   }
+
+   &__photo {
+      width: 140px;
+      border-radius: 2px 2px 2px 200px;
+      box-shadow: -10px 10px 0 0 var(--color-brenda-light), -10px 10px 0 2px var(--color-secondary-dark);
+   
+      @media screen and (min-width: $bp-desktop){
+         width: 240px;
+         border-radius: 4px 4px 4px 200px;
+         box-shadow: -16px 16px 0 0 var(--color-brenda-light), -16px 16px 0 2px var(--color-secondary-dark);
+      }
+   }
+}

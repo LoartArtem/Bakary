@@ -1,0 +1,12 @@
+/*------- Стили меню ----*/
+.link {
+   color: var(--color-brenda-light);
+   text-decoration: none;
+   transition: color 0.3s;
+   /*-Затримка зміни кольору-*/
+}
+
+.link:hover {
+   color: var(--color-brend-li);
+   font-weight: 600;
+}

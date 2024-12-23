@@ -1,0 +1,22 @@
+/*-------Стили кнопки----*/
+.button {
+   color: var(--color-brenda-light);
+   background-color: var(--color-brend-li);
+   border: 2px solid var(--color-brend-li);
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: 600;
+   padding: 16px 32px;
+   display: block;
+   margin: 0 auto;
+}
+
+.button:hover {
+   color: var(--color-brend-da);
+   background-color: transparent;
+}
+
+.header__button:hover {
+   color: var(--color-brend-da);
+   background-color: var(--color-brenda-light);
+}
